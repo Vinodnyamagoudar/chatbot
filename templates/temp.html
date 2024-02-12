@@ -1,0 +1,531 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>priyanka c</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style type="text/css">
+	:root{
+	--bgcolor:#beb8ac;
+	--blue:#2fb7fe;
+	--black:#3D3F42;
+	--white:white;
+	--gray:white;
+	--lightgray:black;
+}
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: monospace;
+}
+body{
+	background: var(--bgcolor);
+}
+.clearfix{
+	clear: both;
+}
+.resume-box{
+	width: 800px;
+	height: 1000px;
+	margin: 100px auto;
+	background: var(--white);
+	box-shadow: 5px 21px 20px 20px #3d3f4238;
+}
+.left-section{
+	background: var(--black);
+	width: 250px;
+	height: 1000px;
+	float: left;
+}
+.profile{
+	overflow: hidden;
+	position: relative;
+}
+.blue-box{
+      width: 257px;
+    height: 250px;
+    background: var(--blue);
+    margin-left: -100px;
+    transform: rotateZ(48deg);
+    margin-top: -178px;
+    
+}
+.profile-img{
+	    position: absolute;
+    z-index: 9;
+    width: 120px;
+    height: 120px;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 3px solid var(--gray);
+}
+.name{
+    color: var(--gray);
+    text-align: center;
+    margin-top: -4px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.name span{
+	color: var(--blue);
+}
+.n-p{
+	width: 180px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 7px;
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    color: var(--gray);
+    margin-top: 11px;
+    text-transform: uppercase;
+}
+.info{
+	margin-top: 50px;
+}
+.heading{
+	width: 180px;
+    margin: 0 auto;
+    padding: 2px;
+    border-bottom: 1px solid var(--gray);
+    border-top: 1px solid var(--gray);
+    color: var(--gray);
+    margin-top: 11px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.p1{
+	color: var(--gray);
+	width: 184px;
+	margin: 0 auto;
+	margin-top: 25px;
+	font-size: 15px;
+    line-height: 14px;
+}
+.p1 span{
+	font-size: 12px;
+}
+.span1 img{
+	background: white;
+    width: 30px;
+    padding: 6px;
+    border-radius: 16px;
+    float: left;
+    margin-right: 10px;
+}
+.right-section{
+	padding: 40px 30px;
+    background: var(--white);
+    width: 68%;
+    float: left;
+    height: 1000px;
+}
+.right-heading img{
+	background: #3d3f42;
+    width: 36px;
+    padding: 7px;
+    border-radius: 17px;
+    float: left;
+    display: inline-block;
+    margin-top: -6px;
+}
+.p2{
+    margin: 0 auto;
+    padding: 2px;
+    border-bottom: 1px solid var(--lightgray);
+    border-top: 1px solid var(--lightgray);
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+    margin-left: 50px;
+    line-height: 18px;
+}
+.p3{
+	margin-top: 20px;
+	color: var(--lightgray);
+	text-align: justify;
+	word-spacing: -4px;
+}
+.p3::first-letter{
+	text-transform: uppercase;
+}
+
+.left{
+	width: 25%;
+	float: left;
+}
+.right{
+	width: 75%;
+	float: left;
+}
+.lr-box{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.p4{
+	font-size: 14px;
+	font-weight: 600;
+}
+.p5{
+	font-size: 12px;
+	color: var(--lightgray);
+}
+.p5::first-letter{
+	text-transform: uppercase;
+}
+.s-box{
+	width: 50%;
+    float: left;
+    padding: 20px 20px 20px 0px;
+}
+#progress {
+    background: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+}
+
+#progress:after {
+    content: '';
+    display: block;
+    background: var(--blue);
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress1 {
+    background: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+}
+
+#progress1:after {
+    content: '';
+    display: block;
+    background: var(--blue);
+    width: 40%;
+    height: 100%;
+    border-radius: 9px;
+}
+#progress2 {
+    background: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+}
+
+#progress2:after {
+    content: '';
+    display: block;
+    background: var(--blue);
+    width: 80%;
+    height: 100%;
+    border-radius: 9px;
+}
+
+#progress3 {
+    background: #333;
+    border-radius: 13px;
+    height: 8px;
+    width: 100%;
+}
+
+#progress3:after {
+    content: '';
+    display: block;
+    background: var(--blue);
+    width: 90%;
+    height: 100%;
+    border-radius: 9px;
+}
+.p6{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.h-img{
+	margin-top: 25px;
+    width: 45px;
+    margin-right: 45px;
+}
+.reinfo{
+            color: white;
+            margin-left: 35px;
+            font-size: xx-large;
+            text-align: center;
+        }
+        .reinfo1{
+            color: white;
+            margin-left: 255px;
+            margin-top: 10px;
+            font-size: large;
+        }
+		@media print {
+	    .no-print, .no-print * { display: none !important; }
+		}
+		.resume1{
+background-color:#581B98;
+height: 200px;
+width:100%;
+}
+.button{
+            margin-left: 45%;
+            margin-top: 10px;
+            text-align: center;
+            width:200px;
+            font-size: xx-large;
+            background-color: white;
+        }
+		.navbar {
+            overflow: hidden;
+            background-color: #581B98;
+            font-family: Arial;
+          }
+          .navbar a {
+            float: left;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          
+          }
+          .li {
+            float: left;
+            font-size: 16px;
+            color: rgb(13, 13, 13);
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+          }
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          .dropdown .dropbtn {
+            font-size: 40px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+          }
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #8e4fd2;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display:block;
+            text-align: left;
+          }
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+</style>
+<body>
+	<div class="navbar no-print">
+         <a href="/resume" style="font-size: 40px;"><i class="fa fa-arrow-left" aria-hidden="true" style="color:white"></i></a>
+         <div class="dropdown">
+          <button class="dropbtn">Instructions<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <ol class="li"><li>To "Edit" the resume ,you can just point the mouse pointer and just edit the text</li>
+                <li>To "Delete" you can just select the lines to be deleted and press "Delete key"</li>
+               </ol>
+          </div>
+    </div>
+	  <div class="dropdown">
+		<button class="dropbtn" onclick="window.print()">Print as PDF
+		</button>
+		</div>
+</div>
+<div class="resume-box" contenteditable="true">
+	
+	<div class="left-section">
+		<div class="profile">
+			<div class="blue-box"></div>
+			</div>
+		<h2 class="name">priyanka c<br></h2>
+		<p class="n-p">Student</p>
+
+
+		<div class="info">
+			<p class="heading">Info</p>
+			<p class="p1"><span class="span1"><img src="././static/images/location.png"></span>Address<span> <br>#332/3,hallashalli road, varthur, bangalore</span></p>
+			<p class="p1"><span class="span1"><img src="././static/images/call.png"></span>Phone<span> <br>9483106792</span></p>
+			<p class="p1"><span class="span1"><img src="././static/images/mail.png"></span>Email<span> <br>priyankachandrashekar2001@gmail.com</span></p>
+		</div>
+
+		<div class="info">
+			<p class="heading">Social</p>
+			
+			
+			<p class="p1"><span class="span1"><img src="././static/images/linkedin.png"></span>Linkdin<span> <br> https://linkedin.com/priyanka</span></p>
+			<p class="p1"><span class="span1"><img src="././static/images/facebook.png"></span>Github<span> <br>github.com/priyanka</span></p>
+		</div>
+<div class="info">
+			<p class="heading">Certifications</p>
+			
+			
+			<p class="p1"> AICTE student learning assessment</p>
+			<p class="p1"> spoken tutorial</p>
+		</div>
+	</div>
+
+	<div class="right-section">
+		<div class="right-heading">
+			<img src="././static/images/user.png">
+			<p class="p2">Objective</p>
+		</div>
+		<p class="p3">i intend to be part of an organization where i can constantly learn and develop my technical and management skills and make best use of it for the growth of the organization</p>
+
+		
+		
+
+<div class="clearfix"></div>
+		<br><br>
+		<div class="right-heading">
+			<img src="././static/images/pencil.png">
+			<p class="p2">Project Details</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">Title</p>
+			<p class="p5">Tools:</p>
+			<p class="p5">Description:</p>
+		</div>
+
+		<div class="right">
+			<p class="p4"style="text-transform: capitalize;"> farm management system</p>
+			<p class="p5"style="text-transform: uppercase;"> html,css,python,js,xamp</p>
+			<p class="p5"> the objective of the project is to provide farmers a platform to display and sell their farm products and for the customers to buy these products at lower price without the third party being invloved.</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+        <br/>
+		<div class="clearfix"></div>
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">Title</p>
+			<p class="p5">Tools:</p>
+			<p class="p5">Description:</p>
+		</div>
+
+		<div class="right">
+			<p class="p4"style="text-transform: capitalize;"> Music player</p>
+			<p class="p5"style="text-transform: uppercase;"> xml, java</p>
+			<p class="p5"> the objective of the project is to provide users with an application that allows them to listen to songs/audio in offline mode.</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+		<br>
+		<div class="right-heading">
+			<img src="././static/images/edu.png">
+			<p class="p2">Education</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">2019-2023</p>
+			<p class="p5" style="text-transform: capitalize;">bangalore</p>
+		</div>
+
+		<div class="right">
+			<p class="p4" style="text-transform: capitalize;">btech - computer science and engineering</p>
+			<p class="p5" style="text-transform: capitalize;"> vemana institute of technology</p>
+			<p class="p5" style="text-transform: capitalize;"> 9.15</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+		<div class="lr-box">
+		<div class="left">
+			<p class="p4">2019</p>
+			<p class="p5">bangalore</p>
+		</div>
+
+		<div class="right">
+			<p class="p4" style="text-transform: capitalize;">12th</p>
+			<p class="p5" style="text-transform: capitalize;"> rjs pu college</p>
+			<p class="p5" style="text-transform: capitalize;" > 90.50</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+	<div class="lr-box">
+		<div class="left">
+			<p class="p4"> 2017</p>
+			<p class="p5"> bangalore</p>
+		</div>
+
+		<div class="right">
+			<p class="p4" style="text-transform: capitalize;">10th</p>
+			<p class="p5" style="text-transform: capitalize;"> lady vailankanni high school</p>
+			<p class="p5" style="text-transform: capitalize;"> 79.68</p>
+		</div>
+		<div class="clearfix"></div>
+		</div>
+
+		<br>
+		<div class="right-heading">
+			<img src="././static/images/edu.png">
+			<p class="p2">Skills</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="s-box">
+			<p class="p4">Programming Languages</p>
+			<p class="p6"> python</p>
+			<p class="p6">advanced java</p>
+			<p class="p6">java</p>
+		</div>
+		<div class="s-box">
+		<p class="p4">Web Technologies</p>
+			<p class="p6"> html</p>
+			<p class="p6">css</p>
+		</div>
+		<div class="clearfix"></div>
+		<div class="s-box">
+		<p class="p4">Database Management</p>
+			<p class="p6"> mysql</p>
+			<p class="p6">sql</p>
+		</div>
+		<div class="s-box">
+		<p class="p4">Operating System</p>
+			<p class="p6">linux</p>
+			<p class="p6">window</p>
+		</div>
+		<div class="clearfix"></div>
+		<br><br>
+
+		
+	</div>
+		<div class="clearfix"></div>
+</div>
+</body>
+</html>

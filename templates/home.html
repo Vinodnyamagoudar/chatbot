@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeBot</title>
+</head>
+<body>
+    <div class="navbar">
+        <a href="/resume">Build Resume</a>
+           
+          </div>
+<!--<nav>
+<div class="resumeclass"><p class="reinfo" style="text-align: left;">Select one from below!</p>
+    <ol><li><button onclick="window.location.href='/resume';" class="button">Create Resume </button></li>
+        <li><button  onclick="window.location.href='/career';" class="button">Get Career Assistance</button></li>
+       
+</div>
+</nav>-->
+<div class="main">ResumeBot<p style="font-size:30px; margin-top: 0%; margin-left: 45px; text-transform: capitalize; text-align: center;">I will help you in creating resume and assist you for your future!</p></div>
+<div class="container-fluid" id="templates">
+    <h1>Make a resume that stands out</h1>
+    <p>Increase your chances of getting a job by creating your resume with our well designed resume
+        templates.</p><br>
+    <div class="row" style="width:100%; margin:auto;">
+        <div class="col-md-4">
+            <img src="static/images/resume1.png" style="width:590px; height:620px;" class="img-thumbnail">
+     
+            <img src="static/images/resume2.png" style="width:590px; height:620px;" class="img-thumbnail">
+       
+            <img src="static/images/resume3.png" style="width:590px; height:620px;" class="img-thumbnail">
+        </div>
+    </div>
+</div>
+
+    <!--<script>
+        $SCRIPT_ROOT = '{{ request.script_root|tojson|safe }}';
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app1.js') }}"></script>-->
+
+</body>
+
+<footer class="footer" style="top: 100%;">thankyou for choosing me!<br/><br/>
+    I was Created by <br/>
+    <ol><li></li><li>priyanka c
+    </li>
+<li>v s amrutha reddy</li>
+<li>p sai charan reddy</li>
+<li>vinod nyamagoudar</li></ol>
+</footer>
+</html>

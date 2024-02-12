@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <title>ResumeBot</title>
+   
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" style="font-size: 40px;"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+        <div class="dropdown">
+          <button class="dropbtn">Resumes<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="/template1">Resume 1</a>
+            <a href="/template2">Resume 2</a>
+            <a href="/template3">Resume 3</a>
+          </div>
+          </div>
+         <div class="dropdown">
+          <button class="dropbtn">Instructions<i class="fa fa-caret-down"></i>
+        
+          </button>
+          <div class="dropdown-content">
+            <ol class="li"><li>Type "Cancel" to undo the last entry.</li>
+                <li>Type "Stop" to stop the process.</li>
+                <li>IF any of the question asked is not applicable please enter the required format and just type null for the information</li>
+                <li>Please follow the format that chatbot prompts you before giving the input.</li></ol>
+          </div>
+    </div>
+      </div>
+
+</div>-->
+<div class="main" style="margin-left: 35%;">ResumeBot<p style="font-size:30px; margin-top: 0%; margin-left: 45px; text-transform: capitalize; text-align: center;">create your resume with me!</p></div>
+
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <button onclick="window.location.href='/resume';"  class="back" type="button"> <i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+                </div>
+                <div class="chatbox__content--header">
+                   
+                    <h4 class="chatbox__heading--header">ResumeBot</h4>
+                    <p class="chatbox__description--header">Hi there!</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                
+                <input type="text" placeholder="Enter here....">
+                <button class="chatbox__send--footer send__button"> <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                     
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" style="width: 100px; height:100px;" /></button>
+        </div>
+    </div>
+</div>
+
+    <script>
+        $SCRIPT_ROOT = '{{ request.script_root|tojson|safe }}';
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+
+</body>
+</html>

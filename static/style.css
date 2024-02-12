@@ -1,0 +1,603 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background-color: white;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #8e4fd2  100%);
+    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%,#8e4fd2 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+}
+/* resume ---------------------------------------------------------------------------*/
+body,td,th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #000000;
+   }
+   body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    
+   }
+   .pad
+   {
+   padding-left:10px;
+   }
+   a:link {
+    color: #000000;
+    text-decoration: none;
+   }
+   a:visited {
+    text-decoration: none;
+    color: #000000;
+   }
+   a:hover {
+    text-decoration: underline;
+    color: #000000;
+   }
+   a:active {
+    text-decoration: none;
+    color: #000000;
+   }
+/* CHATBOX
+=============== */
+.chatbox {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    top:50px;
+}
+
+/* CONTENT IS CLOSE */
+.chatbox__support {
+    display: flex;
+    flex-direction: column;
+    background: #eee;
+    width: 300px;
+    height: 350px;
+    z-index: -123456;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+/* CONTENT ISOPEN */
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+
+/* BUTTON */
+.chatbox__button {
+    text-align: right;
+}
+
+.send__button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.buttonresume{
+    height:50px;
+    background-color: white;
+    margin-left: 35%;
+    width:auto;
+    font-size:25px;
+
+}
+.resumeclass{
+    width:100%;
+    font-size: 40px;
+    background-color: #581B98;
+    color: white;
+    height:25%;
+    
+}
+
+/* HEADER */
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: orange;
+}
+
+/* MESSAGES */
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+
+.messages__item {
+    background: #581B98;
+    max-width: 60.6%;
+    width: fit-content;
+}
+
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+
+.chatbox__support {
+    background: #f9f9f9;
+    height: 600px;
+    width: 700px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* HEADER */
+.chatbox__header {
+    background: var(--primaryGradient);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+    margin-left: 0%;
+}
+
+.chatbox__heading--header {
+    font-size: 2.9rem;
+    color: white;
+}
+
+.chatbox__description--header {
+    font-size: 1.9rem;
+    color: white;
+}
+
+/* Messages */
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: #E0E0E0;
+    padding: 20px 20px;
+    max-width: 100%;
+    font-size: 30px;
+}
+
+.messages__item--visitor,
+.messages__item--typing {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background: var(--primary);
+    color: white;
+}
+.indexname{
+    color:black;
+    size: 10px;
+}
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+
+.chatbox__footer input {
+    width: 800%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+    font-size:20px;
+}
+
+.chatbox__send--footer {
+    color: white;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px;
+    background: white;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.back{
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 30px;
+    width: 10px 20px 30px;
+    background-color: white;
+    color: #000000;
+    
+}
+.main{
+    display:inline-block;
+    font-family: "Inter", sans-serif!important;
+    font-weight: 1000;
+    font-size: 800%;
+    line-height: 2.5;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 20%;
+    margin-right:40px;
+    color: #581B98;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+*{font-family:'Nunito', sans-serif;}
+:root{
+    --font-color:#474950;
+    --second-color:#414043;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+   
+    height: 150vh;
+}
+.clearfix{ clear: left;
+    margin-top: 0px;
+height: 20px;}
+.resume-box{
+    width: 800px;
+    height: 1200px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color:white;
+}
+.box-outer{padding: 30px;}
+.box-1{
+    width: 35%;
+    float: left;
+    height: 1000px;
+    padding-right: 39px;
+}
+.box-2{
+    width: 60%;
+    float: left;
+    padding:0px 20px;
+}
+.name{
+    letter-spacing: 5px;
+    font-family: arial;
+    color: var(--font-color);
+    line-height: 39px;
+    margin: 20px 0px 0px 20px;
+  text-align: center;
+    font-weight: 900;
+    font-size: 40px;
+}
+.contat_p{color: var(--font-color);
+font-size: 18px;}
+.fontfa{
+    padding: 8px;
+    background: var(--font-color);
+    color: white;
+    border-radius: 20px;
+    width: 30px;
+    text-align: left;
+    font-size: 36px;
+}
+.name_p{
+    margin: 3px 0px 0px 20px;
+   text-align: center;
+    text-transform: uppercase;
+    color: var(--font-color);
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.profile{
+    width: 100px;
+    height: 100px;
+    float: left;
+    border-radius: 10px;
+    border: 3px solid var(--font-color);
+    margin-top: 15px;
+}
+.content{padding: 0px;}
+h1{
+    color: var(--font-color);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+p{
+    color: var(--font-color);
+    font-weight: 300;
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+ul:before{
+    content: "";
+    display:inline-block;
+    width : 2px;
+    background: #47494f2b;
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    height: calc(100% - 10px);
+}
+ul li{
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+ul li:before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: var(--second-color);
+    position: absolute;
+    left: -1px;
+    top: 5px;
+    border-radius: 10px;
+}
+
+#progress, #progress1, #progress2, #progress3{
+    background: #47494f00;
+    height: 5px;
+    width: 100%;
+    border: 1px solid #c0c1c3;
+}
+#progress::after, #progress1::after, #progress2::after, #progress3::after{
+    content: '';
+    display: block;
+    background: var(--second-color);
+    height: 100%;
+}
+#progress:after{width: 50%;}
+#progress1:after{width: 40%;}
+#progress2:after{width: 80%;}
+#progress3:after{width: 90%;}
+.col-sm-6{
+    width: 100%; float: inline;
+}
+.head{
+    color: var(--font-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: arial;
+    font-size: 25px;
+    letter-spacing: 3px;
+
+}
+.para-1{
+    
+    text-transform: uppercase;
+    color: black;
+    font-weight: 400;
+    margin: 5px 0px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+.para-2{
+  
+   
+    color: var(--second-color);
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-size: 20px;
+}
+.para-2::first-letter{
+    text-transform: uppercase;
+}
+.resume1{
+background-color:#581B98;
+height: 200px;
+width:100%;
+}
+ @media print {
+	    .no-print, .no-print * { display: none !important; }
+        }
+        .resume {  
+            margin-top: 0%;
+            height: 100%;
+            width: 200px;
+            background-color: #581B98;
+            float: left;
+        }
+        .resume1{
+            background-color:#581B98;
+            height: 200px;
+            width:100%;
+            }
+        .button{
+            margin-left: 0%;
+            margin-top: 5px;
+            text-align: center;
+            width:auto;
+            height: auto;
+            font-size: 40px;
+            color: black;
+            background-color:white;
+        }
+        .reinfo{
+            color: white;
+            margin-left: 35px;
+            font-size: xx-large;
+            text-align: center;
+        }
+        .reinfo1{
+            color: white;
+            margin-left: 255px;
+            margin-top: 10px;
+            font-size: large;
+        }
+.careerguidance{
+    width: 100%;
+    margin-top: 10%;
+    background :#581B98 ;
+    font-size: 30px;
+    color: white;
+}
+.career1{
+    font-size: 25px;
+    color: white;
+}
+.career2{
+    font-size: 20px;
+    color: white;
+}
+.career3, .rel-button{
+    font-size: 30px;
+    color: white;
+}
+.footer{
+    margin-bottom: 60%;
+    margin-top: 100%;
+    font-size: 30px;
+    text-align: center;
+    text-transform: capitalize; 
+    background-color: #581B98;
+    width: 100%;
+    height: 25%;
+    color: white;
+}
+
+/* Navbar container */
+        .navbar {
+            overflow: hidden;
+            background-color: #581B98;
+            font-family: Arial;
+          }
+          
+          /* Links inside the navbar */
+          .navbar a {
+            float: left;
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          
+          }
+         
+          .li {
+            float: left;
+            font-size: 16px;
+            color: rgb(13, 13, 13);
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+          }
+          /* The dropdown container */
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+          
+          /* Dropdown button */
+          .dropdown .dropbtn {
+            font-size: 40px;
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit; /* Important for vertical align on mobile phones */
+            margin: 0; /* Important for vertical align on mobile phones */
+          }
+          
+          /* Add a red background color to navbar links on hover */
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #8e4fd2;
+          }
+          
+          /* Dropdown content (hidden by default) */
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          /* Links inside the dropdown */
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display:block;
+            text-align: left;
+          }
+          
+          /* Add a grey background color to dropdown links on hover */
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          /* Show the dropdown menu on hover */
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+.container-fluid
+{
+    position: absolute;
+    top:100%;
+    text-align: center;
+    border: 0px;
+    bottom: -29%;
+}

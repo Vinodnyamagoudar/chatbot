@@ -1,0 +1,59 @@
+{
+    "intents": [
+      {
+        "tag": "person_name",
+        "patterns": ["^[a-zA-Z]{7,29}[\\s][a-zA-z]{0,20}$"],
+        "responses": ["Enter your 10 digits phone number"]
+      },
+    {
+      "tag": "github",
+      "patterns": ["^github.com/"],
+      "responses": ["Enter your residential address"]
+    },
+        {
+        "tag": "phone_number",
+        "patterns": ["^\\d{10}$"],
+        "responses": ["Please provide your Email ID"]
+         },
+         {
+            "tag": "linkedin",
+            "patterns": ["https?:","linkedin.com"],
+            "responses": ["Enter your github profile link (Ex: github.com/...)"]
+          },
+          {
+            "tag": "resiaddress",
+            "patterns": ["^#"],
+            "responses": ["Enter your career objective as \"Objective:\" followed by objective"]
+          },
+          {
+            "tag": "careerobjective",
+            "patterns": ["^objective: ","^objective:","^Objective: ","^Objective:" ],
+            "responses": ["Enter your UG degree name, followed by name of the course, institution, address and duration\n(Note: Seperate each by \",\")"]
+          },
+          {
+            "tag": "protitle2",
+            "patterns": ["^Title2:","^Title2: ","^title2:","^title2: "],
+            "responses": ["Please enter the tools/technologies used in your project as \"Tools used2:\""]
+          },
+          {
+            "tag": "protools2",
+            "patterns": ["^Tools used2:","^Tools used2: ","^tools used2:","^tools used2: "],
+            "responses": ["Please enter the description of your project as \"Description2:\""]
+          },
+          {
+            "tag": "prodes2",
+            "patterns": ["^Description2:","^Description2: ","^description2: ","^description2:"],
+            "responses": ["Enter your work experience as \"Experience:\" followed by Designation, Company name, Description of the work \n else enter \"Done\" to get the resume"]
+          },
+          {
+            "tag": "prodes",
+            "patterns": ["Description:","Description: ","description: ","description:"],
+            "responses": ["If you want to enter another project detail please enter as \"Title2:\""]
+          },
+          {
+            "tag": "careerassistance",
+            "patterns": ["^Career Assistance:","^career assistance: ","^careerassistance:"],
+            "responses": ["Enter a programming language on which you want assistance in"]
+          }
+         ]
+        }

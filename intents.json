@@ -1,0 +1,87 @@
+{
+  "intents": [
+    {
+      "tag": "resume",
+      "patterns": ["Can you build my resume?","Build resume","Generate resume","do resume","prepare resume" ],
+      "responses": ["Great, let's get started! What is your name?"]
+    },
+    {
+      "tag": "email",
+      "patterns": ["@email.com","@gmail.com","@outlook.com"],
+      "responses": ["Please provide a link(url) to your LinkedIn profile (Ex: https://linkedin.com/...)"]
+    },
+      
+      {
+        "tag": "undergrad",
+        "patterns": ["be,","btech,","bsc,","bachelor of engineering,","bachelor of engineering, ","bachelor of technology, "],
+        "responses": ["Enter your UG cgpa as \"UG CGPA:\" followed by cgpa"]
+      },
+      {
+        "tag": "ugcgpa",
+        "patterns": ["ug cgpa:","ug cgpa: "],
+        "responses": ["please enter your Intermediate course \"12th\", followed by name of the institution, address and duration ex: (2017-2019) \n(Note: Seperate each by \",\")"]
+      },
+      {
+        "tag": "incolname",
+        "patterns": ["12,","12, ","12th,","12th, "],
+        "responses": ["Enter intermediate cgpa/percentage as \"12th CGPA:\" or \"12th Percentage:\""]
+      },
+      {
+        "tag": "incgpa",
+        "patterns": ["12th cgpa: ","12th cgpa:","12th percentage: ","12th percentage:"],
+        "responses": ["please enter your schooling info \"10th\", school name , address and duration ex: (2017) \n(Note: Seperate each by \",\") "]
+      },
+      
+      {
+        "tag": "schoolName",
+        "patterns": ["10th, ","10th, "],
+        "responses": ["Enter your school cgpa with \"10th CGPA:\" or \"10th percentage\" "]
+      },
+      {
+        "tag": "schoolper",
+        "patterns": ["10th cgpa: ","10th cgpa:","10th percentage: ","10th percentage:"],
+        "responses": ["Enter programing languages as known \"Programming:\" each separated by a \",\""]
+      },
+      {
+        "tag": "programminglanguages",
+        "patterns": ["programming:, ","programming: "],
+        "responses": ["Enter Web technologies known as \"Webtech:\" each separated by a \",\" "]
+      },
+      {
+        "tag": "webtechnology",
+        "patterns": ["webtech:, ","webtech: "],
+        "responses": ["Enter Database management sytems known as \"Database:\" each separated by a \",\" "]
+      },
+      {
+        "tag": "database",
+        "patterns": ["Database:, ","Database: "],
+        "responses": ["Enter Web technologies known as \"Operatingsys:\" each separated by a \",\" "]
+      },
+      {
+        "tag": "opsys",
+        "patterns": ["Operatingsys:, ","Operatingsys: "],
+        "responses": ["Enter Certifications/Courses completed as \"Courses:\" each separated by a \",\" "]
+      },
+      {
+        "tag": "courses",
+        "patterns": ["Courses:, ","Courses: "],
+        "responses": ["Enter your project details \n Enter title as \"Title:\""]
+      },
+      {
+        "tag": "protitle",
+        "patterns": ["Title:","Title: "],
+        "responses": ["Please enter the tools/technologies used in your project as \"Tools used:"]
+      },
+      {
+        "tag": "protools",
+        "patterns": ["Tools used:","Tools used: "],
+        "responses": ["Please enter the description of your project as \"Description:\""]
+      },
+  
+      {
+        "tag": "experience",
+        "patterns": ["Experience:","Experience: "],
+        "responses": ["Thankyou"]
+      }
+  ]
+}
